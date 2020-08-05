@@ -26,7 +26,7 @@ function multiply() {
   outputResult(currentResult, calcDescription);
 }
 
-function add() {
+function divide() {
   const enteredNumber = getUserNumberInput()
   const calcDescription = `${currentResult} / ${enteredNumber}`
   currentResult = currentResult / enteredNumber ;
@@ -35,3 +35,6 @@ function add() {
 
 
 addBtn.addEventListener('click', add);
+subtractBtn.addEventListener('click', subtract);
+multiplyBtn.addEventListener('click', multiply);
+divideBtn.addEventListener('click', divide);
