@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: 'Roboto', open-sans;
+  font-family: 'Red Rose', cursive;
 }
 
 body {
@@ -28,6 +28,8 @@ header {
   border-radius: 10px;
   padding: 1rem;
   color: #023d6d;
+  background-color: aliceblue;
+
 }
 
 #results {
@@ -52,11 +54,12 @@ header {
 
 #calculator button {
   font: inherit;
-  background: #023d6d;
+  background: red;
   color: white;
   border: 1px solid #023d6d;
   padding: 1rem;
   cursor: pointer;
+  font-size: 20px;
 }
 
 #calculator button:focus {
