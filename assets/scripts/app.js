@@ -28,22 +28,23 @@ function writeToLog(
 }
 
 function calculateResult(calculationType) {
-  //if(
-  //  calculationType !== "ADD" &&
-  //  calculationType !== "SUBTRACT" &&
-  //  calculationType !== "MULTIPLY" &&
-  //  calculationType !== "DIVIDE"
-  //  ) {
-  //    return
-  //  }
-
+  const enteredNumber = getUserNumberInput();
   if(
-   calculationType === "ADD" ||
-   calculationType === "SUBTRACT" ||
-   calculationType === "MULTIPLY" ||
-   calculationType === "DIVIDE"
-  ){
-    const enteredNumber = getUserNumberInput();
+    calculationType !== "ADD" &&
+    calculationType !== "SUBTRACT" &&
+    calculationType !== "MULTIPLY" &&
+    calculationType !== "DIVIDE" ||
+    !enteredNumber
+    ) {
+      return
+    }
+
+  //if(
+  // calculationType === "ADD" ||
+  // calculationType === "SUBTRACT" ||
+  // calculationType === "MULTIPLY" ||
+  // calculationType === "DIVIDE"
+  //){
     const initialResult = currentResult;
     let mathOperator;
     if( calculationType === "ADD"){
@@ -62,7 +63,7 @@ function calculateResult(calculationType) {
     createAndWriteOutput(mathOperator, initialResult, enteredNumber )
     writeToLog(calculationType, initialResult , enteredNumber, currentResult)  
   }
-}
+//}
   
   
   function add() {
